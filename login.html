@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+        }
+        body{
+           
+            background-size: cover;
+            background-color: tomato;
+         
+        }
+        .login-form{
+    
+            width: 350px;
+            top: 50%;
+            cursor: pointer;
+            left: 50%;
+            
+            transform: translate(-50%, -50%);
+            position: absolute;
+            color: white;
+        }
+        .login-form h1{
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 15px 0;
+            cursor: pointer;
+
+        }
+        .login-form p{
+            font-size: 25px;
+            margin: 10px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        .login-form input{
+            font-size: 16px;
+            width: 100%;
+            padding: 15px 10px;
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .login-form button{
+            font-size: 18px;
+            background-color: skyblue;
+            /* font-weight: bold; */
+            margin: 20px 0;
+            padding: 10px 15px ;
+            width: 50%;
+            border-radius: 5px;
+            border: 0;
+            margin-top: 30px;
+            cursor: pointer;
+
+        }
+         button a:hover{
+            background-color: springgreen;
+            color: #000;
+        } 
+            .btn:hover{
+                background-color: steelblue;
+            }
+
+        
+    </style>
+</head>
+<body> 
+  <div class="login-form">
+      <h1>login form</h1>
+      <form action="myaction" name="fname" onsubmit="return" validateform()" methhod="post">    
+          <p>Username</p>
+          <input type="text" name="user" id="user name" placeholder="Username">
+          <p>Password</p>
+          <input type="password" name="password" id="password" placeholder="Password">
+          <button class="btn" type="submit">login</button>
+      </form>
+  </div>
+</body>
+ <script src="login.js"></script>
+</html>
